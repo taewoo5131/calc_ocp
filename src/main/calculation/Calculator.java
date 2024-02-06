@@ -27,12 +27,16 @@ public class Calculator {
 
     public static CalculationOperation getOperationClass(String opperation) {
         switch (opperation){
+            case "Addition":
             case "+":
                 return OperationKind.ADDITION.getCalculationOperation();
+            case "Subtraction":
             case "-":
                 return OperationKind.SUBTRACTION.getCalculationOperation();
+            case "Multiplication":
             case "*":
                 return OperationKind.MULTIPLICATION.getCalculationOperation();
+            case "Division":
             case "/":
                 return OperationKind.DIVISION.getCalculationOperation();
         }
